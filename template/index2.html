@@ -1,0 +1,8 @@
+{% extends 'index.html' %}{% block content  %}
+<div class="py-5 container">
+Meaning : {{mean}}<br><br><hr border="thick">
+Translate : {{trans}}<br><br><hr border="thick">
+Antonym : {% for a in ant %}{{a}},{% endfor %}<br><br><hr border="thick">
+Synonyms : {% for sync in syn %}{{sync}}, {% endfor %}<br><br><hr border="thick">
+</div>
+{% endblock %}
